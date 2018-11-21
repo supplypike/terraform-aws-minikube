@@ -45,7 +45,7 @@ variable "ami_image_id" {
   default     = ""
 }
 
-variable "kube_resources" {
+variable "k8s_resources" {
   description = "Path to local directory to mount in the ec2 instance at /tmp/"
   default     = ""
 }

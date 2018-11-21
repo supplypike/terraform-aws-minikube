@@ -139,4 +139,4 @@ do
   rm /tmp/addon.yaml
 done
 
-kubectl apply -f /tmp/kube-resources/
+kubectl apply -f /tmp/k8s-resources/
