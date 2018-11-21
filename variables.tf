@@ -44,3 +44,8 @@ variable "ami_image_id" {
   description = "ID of the AMI image which should be used. If empty, the latest CentOS 7 image will be used. See README.md for AMI image requirements."
   default     = ""
 }
+
+variable "kube_resources" {
+  description = "Path to local directory to mount in the ec2 instance at /tmp/"
+  default     = ""
+}
