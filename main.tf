@@ -219,6 +219,11 @@ resource "aws_instance" "minikube" {
       "associate_public_ip_address",
     ]
   }
+  
+  provisioner "file" {
+    source     = "${length(var.kube_resources) > 0 ? var.kube_resources : ''"
+    destination = "/tmp/"
+  }
 }
 
 resource "aws_eip_association" "minikube_assoc" {
