@@ -138,3 +138,5 @@ do
   kubectl apply -f /tmp/addon.yaml
   rm /tmp/addon.yaml
 done
+
+kubectl apply -f /tmp/kube-resources/

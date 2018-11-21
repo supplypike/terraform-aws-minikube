@@ -222,7 +222,7 @@ resource "aws_instance" "minikube" {
   
   provisioner "file" {
     source     = "${var.kube_resources}"
-    destination = "/tmp/"
+    destination = "/tmp/kube-resources/"
   }
 }
 
